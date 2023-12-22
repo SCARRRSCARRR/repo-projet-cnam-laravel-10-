@@ -11,10 +11,10 @@
         <nav>
            <ul>
                 <li>
-                   <a href= "{{ route('main.home') }}">Accueil</a>
+                   <a href= "{{ route('main.accueil') }}">Accueil</a>
                 </li>
                 <li>
-                   <a href= "{{ route('main.menu')}}">Menu</a>
+                   <a href= "{{ route('main.menu') }}">Menu</a>
                 </li>
             </ul>
         </nav>

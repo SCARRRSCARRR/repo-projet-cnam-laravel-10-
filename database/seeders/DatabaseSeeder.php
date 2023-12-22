@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,11 +13,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        $sql = file_get_contents(__DIR__.'/categories.sql');
+        DB::unprepared($sql);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $sql = file_get_contents(__DIR__.'/etiquettes.sql');
+        DB::unprepared($sql);
+
+        $sql = file_get_contents(__DIR__.'/plats.sql');
+        DB::unprepared($sql);
+
+        $sql = file_get_contents(__DIR__.'/etiquettes_plats.sql');
+        DB::unprepared($sql);
     }
 }
