@@ -9,7 +9,7 @@ class MainController extends Controller
 {
     public function home ()
     {   
-        $actus= Actu :: all();
+        $actus= Actu::all();
 
         return view('home', [
             'actus'=> $actus,

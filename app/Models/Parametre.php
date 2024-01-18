@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Actu extends Model
+class Parametre extends Model
 {
     use HasFactory;
 
-    protected $table = 'actus';
-    
-    protected $primaryKey = 'id';
+    protected $table = 'parametres';
+    protected $primaryKey ='id';
 }
+
