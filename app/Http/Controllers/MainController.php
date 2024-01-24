@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Actu;
 use App\Models\Categorie;
+use App\Models\Plat;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -27,4 +28,14 @@ class MainController extends Controller
             'categories' => $categories,
         ]);
     }
+
+    public function plat(int $id)
+    {
+        $plat = Plat::find($id);
+
+        return view('plat', [
+            'plat'=> $plat,
+        ]);
+    }
+
 }
