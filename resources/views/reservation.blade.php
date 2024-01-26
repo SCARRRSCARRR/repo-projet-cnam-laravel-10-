@@ -1,20 +1,4 @@
-@extends ('base')
-
-@php
-$heures = [
-  // crénaux du midi
-  '12:00:00' => '12:00',
-  '12:30:00' => '12:30',
-  '13:00:00' => '13:00',
-  '13:30:00' => '13:30',
-
-  //crénaux du soir
-  '20:00:00' => '20:00',
-  '20:30:00' => '20:30',
-  '21:00:00' => '21:00',
-  '21:30:00' => '21:30',
-];
-@endphp
+@extends ('base');
 
 @section ('title', 'reservation')
 
@@ -45,9 +29,9 @@ $heures = [
           <label for="heure">Heure</label>
              <select name="heure" id="heure" not-required>
              <option value=""></option>
-            @foreach ($heures as $heure => $label)
+            @foreach ($heures as $heure)
               <option value="{{ $heure }}" {{ old('heure') == 
-              $heure ? 'selected' : '' }}>{{ $label }}</option>  {{-- ?et : c'est un opérateur ternaire, condition ? afficher si c'est vrai
+              $heure ? 'selected' : '' }}>{{ $heure }}</option>  {{-- ?et : c'est un opérateur ternaire, condition ? afficher si c'est vrai
                : truc à afficher si c'est faux on pourrait faire--}}
             @endforeach
         </select>
@@ -57,7 +41,7 @@ $heures = [
       </div>
       <div>
         <label for="jour">Jour</label>
-        <input type="date" name="jour" id="jour"
+        <input type="date" name="jour" id="jour" min="{{ date('Y-m-d') }}"
         value="{{ old('jour') }}" not-required>
         @error('jour')
          <div class="invalid-feedback"> {{ $message }}</div>
