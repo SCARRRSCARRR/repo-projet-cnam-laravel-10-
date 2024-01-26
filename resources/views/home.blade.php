@@ -10,6 +10,15 @@
          <li>{{ $actu->contenu}} ({{ $actu->date_publication}})</li>
     @endforeach
 </ul>
+
+<ul class="ambiance">
+    @foreach ($photoAmbiances as $photoAmbiance)
+         <li>
+            <img src="{{ asset('image/'.$photoAmbiance->fichier )}}" alt="ff">
+            <p>{{ $photoAmbiance->description }}</p>
+        </li>
+    @endforeach
+</ul>
 @endsection
        
 

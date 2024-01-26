@@ -12,9 +12,11 @@ class MainController extends Controller
     public function home ()
     {   
         $actus= Actu::all();
+        $photoAmbiance = photoAmbiance::all();
 
         return view('home', [
             'actus'=> $actus,
+            'photoAmbiances' => $photoAmbiance,
         ]);
     } 
 
@@ -36,6 +38,25 @@ class MainController extends Controller
         return view('plat', [
             'plat'=> $plat,
         ]);
+    }
+
+    public function reservation()
+    {
+       return view('reservation');
+    }
+
+    public function reservationStore(Request $request)
+    {
+
+       $validated = $request->validate([
+        'nom' => 'required|min:3|max:50',
+        'couverts' => 'required|numeric|gte:1|lte:16',
+        'heure' => 'required',
+        'jour' => 'required',
+        'telephone' => 'required',
+        'commentaires' => '',
+       ]);
+       dd($validated);
     }
 
 }

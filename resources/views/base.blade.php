@@ -16,6 +16,9 @@
                 <li>
                    <a href= "{{ route('main.menu') }}">Menu</a>
                 </li>
+                <li>
+                    <a href="{{ route('main.reservation')}}">Réservation</a>
+                </li>
             </ul>
         </nav>
     </header>
