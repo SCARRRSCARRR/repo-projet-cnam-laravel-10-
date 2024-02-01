@@ -1,5 +1,7 @@
 @extends ('base')
 
+@section ('title', 'Plat')
+
 @section ('content')
 <section>
     <img src="{{ asset('image/'.$plat->fichier) }}" alt="{{ $plat->nom }}" />

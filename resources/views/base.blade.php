@@ -7,7 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <header>
+    <header class="fond">
         <nav>
            <ul>
                 <li>

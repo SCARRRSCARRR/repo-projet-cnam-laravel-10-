@@ -18,7 +18,7 @@ return new class extends Migration
             $table->Time('heure');
             $table->date('jour');
             $table->string('telephone');
-            $table->text('commentaires');
+            $table->text('commentaires')->nullable();
             $table->timestamps();
         });
     }
