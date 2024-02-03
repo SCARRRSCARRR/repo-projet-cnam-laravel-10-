@@ -64,7 +64,7 @@
       </div>
       <div>
         <label for="commentaires">Commentaires</label>
-        <textarea name="commentaires" id="nom" cols="30" rows="10">
+        <textarea name="commentaires" id="commentaires" cols="30" rows="10">
         {{ old('commentaires') }}</textarea>
         @error('commentaires')
          <div class="invalid-feedback"> {{ $message }}</div>

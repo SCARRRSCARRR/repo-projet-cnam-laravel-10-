@@ -24,3 +24,9 @@ Route::get('/reservation/create', [MainController::class, 'reservation'])->name(
 
 Route::post('/reservation/create', [MainController::class, 'reservationStore'])->name('main.reservation.store');
 
+Route::get('/reservationIndex',[ MainController::class, 'reservationIndex'])->name('main.reservationIndex');
+
+Route::get('/reservationShow{id}', [MainController::class, 'reservationShow'])->name('main.reservationShow');
+
+Route::get('/contact', [MainController::class, 'contact'])->name('main.contact');
+

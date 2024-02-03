@@ -8,6 +8,10 @@
 </head>
 <body>
     <header class="fond">
+        <a href="#" class="logo">
+        <span>OCNAMO</span> DELUXE</a>
+        
+    <div class="menuToggle" onclick="toggleMenu();"></div>
         <nav>
            <ul>
                 <li>
@@ -19,7 +23,11 @@
                 <li>
                     <a href="{{ route('main.reservation')}}">Réservation</a>
                 </li>
+                <li>
+                    <a href="{{ route('main.contact')}}">Contact</a>
+                </li>
             </ul>
+
         </nav>
     </header>
     @yield('content')

@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\PhotoAmbiance;
+use App\Models\Contact;
 use App\Models\Actu;
 use App\Models\Categorie;
 use App\Models\Plat;
 use App\Models\Reservation;
 use Illuminate\Http\Request;
+
 
 class MainController extends Controller
 {
@@ -90,5 +92,34 @@ class MainController extends Controller
         'reservation' => $reservation,
        ]);
     }
+    // /admin/reservation
+       public function reservationIndex(){
+           
+       $reservation = Reservation::all();
+    
+        return view ('reservationIndex',[
+           'reservation' => $reservation,
+        ]);
 
+     } 
+        public function reservationShow(int $id){
+        
+         $reservation = Reservation::find($id);
+        
+         return view ('reservationShow',['reservation' => $reservation]);
+        
+    }
+       public function contact ()
+    {   
+        $actus= Actu::all();
+
+        return view('contact', [
+            'actus'=> $actus,
+        ]);
+    } 
+    // recup la liste des resa 
+    // affiche un template 
+    
+    //recup la liste des résa
+    // affiche un templat
 }
