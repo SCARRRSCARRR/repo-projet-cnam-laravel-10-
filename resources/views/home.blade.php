@@ -6,7 +6,7 @@
     </header>
     <div class="banniere">
         <div class=contenu>
-            <h1>OCNAMO DELUXE</h1>
+            <h1>OCNAMO</h1>
             <!--slider image-->
             </header>
             <h2>Pour voyager manger Camerounais</h2>

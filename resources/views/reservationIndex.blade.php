@@ -5,6 +5,6 @@
 @section ('content')
 
     @foreach ($reservations as $reservation)
-       <h3>{{ $reservation->nom }}</h3>
+       <a href="{{ route('main.reservationShow', ['id' => $reservation->id]) }}">{{ $reservation->nom}}</a>
     @endforeach
 @endsection

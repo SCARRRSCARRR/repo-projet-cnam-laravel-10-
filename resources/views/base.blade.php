@@ -9,18 +9,18 @@
 <body>
     <header>
         <div class="fond">
-            <a href="#" class="logo">
-                <span>OCNAMO</span>DELUXE</a>          
+            <a href="#" class="logo">  
+            <img class="log" src="/Image/3.jpg" alt=""></a>   
         </div>
             <ul class=navbar>
                 <table class="header" width ="100%">
-                     <td><u><a href= "{{ route('main.home') }}">Accueil</a></u></td>
+                     <td><a href= "{{ route('main.home') }}">Accueil</a></td>
 
-                     <td><u><a href= "{{ route('main.menu') }}">Menu</a></u></td>
+                     <td><a href= "{{ route('main.menu') }}">Menu</a></td>
 
-                     <td><u><a href="{{ route('main.reservation') }}">Réservation</a></u></td>
+                     <td><a href="{{ route('main.reservation') }}">Réservation</a></td>
 
-                     <td><u><a href="{{ route('main.contact') }}">Contact</a></u></td>
+                     <td><a href="{{ route('main.contact') }}">Contact</a></td>
                 </table>
             </ul>
     </header>

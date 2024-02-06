@@ -6,7 +6,7 @@
     <h2> Contact </h2>
     <hr>
 <section class="contact" id="contact">
-        <h3>Ocnamo deluxe</h3>
+        <h3>Ocnamo</h3>
           <p> <span>5 rue Boulevard Louis XIV</span>
             <span>59800 Lille France</span>
           </p>

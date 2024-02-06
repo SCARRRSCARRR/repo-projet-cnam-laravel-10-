@@ -20,23 +20,28 @@
     color: red;
   }
    
-  .logo{
-    color: #fff;
+  .logo {
     font-weight: bold;
     font-size: 2em;
-    text-decoration: none;
-    background-image:url(/images/img1.jpg);
+    width: 200px;
+    height: 20px; 
+    border-radius: 200%;
+    border: 5px solid; 
+    border-color: black; 
+  } 
+.log {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 5px solid;
+  border-color:black;
+}
 
-    
-}
-.logo span{
-    color: #f0fb1f;
-  
-  
-}
+
 
   .fond{
-    background-image: url(/images/food.jpg);
+    background-color:black;
+    background: linear-gradient(orange,green);
 
   }
   
@@ -59,10 +64,11 @@ body {
   header {
     display: flex;
     flex-direction: column;
-    justify-content:left;
-    align-items: left;
-    
-}
+    justify-content:space-between;
+    align-items: left;      
+ } */
+
+
 
 
 
@@ -103,7 +109,7 @@ div.slides {
 }
 
 .slide {
-  opacity: 0.7;
+  opacity: 0.8;
   
 }
 
@@ -129,7 +135,8 @@ div.slides {
 
 .navbar{
    display: flex;
-  position: relative;
+   position: relative;
+   z-index: 10;
 }
 
 .navbar a{
@@ -137,6 +144,7 @@ div.slides {
     text-decoration: none;
     margin-left: 30px;
     font-weight: 700;
+    
 }
 .contenu{
   max-width: 80%;
@@ -151,7 +159,7 @@ div.slides {
 
 .boutton1{
   font-size: 1em;
-  color: #fff;
+  color: black;
   background: #fb911f;
   padding: 10px 20px;
   display: inline-block;
@@ -164,7 +172,7 @@ div.slides {
 }
 .boutton2{
   font-size: 1em;
-  color: #fff;
+  color:black;
   background: #b0a70b;
   padding: 10px 20px;
   display: inline-block;
@@ -192,6 +200,7 @@ div.slides {
 .map{
  width:60%;
  }
+
 .text{
     color: yellow;
     text-align: center;
@@ -199,4 +208,30 @@ div.slides {
 
 .infohoraire li{
  list-style: none;
+}
+
+.navbar td a {
+  margin-left: 10px;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: black;
+  text-decoration: 0;
+  position: relative;
+
+
+}
+.navbar td a::after {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  content:"";
+  width: 0;
+  height: 5px;
+  background-color:red;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+}
+
+.navbar td a:hover::after {
+  width: 100%;
 }
