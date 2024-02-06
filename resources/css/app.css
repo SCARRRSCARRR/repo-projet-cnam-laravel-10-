@@ -1,3 +1,5 @@
+
+
 .plats {
     display:flex;
     list-style: none;
@@ -17,7 +19,184 @@
   .invalid-feedback {
     color: red;
   }
+   
+  .logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    background-image:url(/images/img1.jpg);
+
+    
+}
+.logo span{
+    color: #f0fb1f;
   
+  
+}
+
   .fond{
-    background-image:url(/images/image2.jpg);
+    background-image: url(/images/food.jpg);
+
   }
+  
+  .banniere{
+    
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+  
+  }
+
+body {
+    background-color: rgba(236, 151, 77, 0.842);
+    margin: 0 auto;
+}
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: left;
+    
+}
+
+
+
+header h1 {
+    font-size: 40px;
+  
+}
+
+header p{
+    font-size: 25px;
+    text-align: center;
+}
+
+div.title-box h1, p, li {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+  /* slider*/
+
+.slider {
+  overflow: hidden;
+  
+  
+}
+
+div.slides {
+  
+  display:flex;
+  justify-content:space-around;
+  align-items: flex-end;
+  width: calc(600px *3);
+  height: 700px;
+  flex-direction: row;
+  animation: glisse 15s infinite ease;
+ 
+  
+}
+
+.slide {
+  opacity: 0.7;
+  
+}
+
+@keyframes glisse{
+  0% {
+      transform: translateX(0);
+  }
+  10%{
+      transform: translateX(0);
+  }
+  33% {
+      transform: translateX(-1100px);
+  }
+  66% {
+      transform: translateX(-1100px);
+  }
+  
+  100% {
+      transform: translateX(0);
+  }
+ 
+  }
+
+.navbar{
+   display: flex;
+  position: relative;
+}
+
+.navbar a{
+    color: #c11515;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+.contenu{
+  max-width: 80%;
+  text-align: center;
+
+}
+.banniere .contenu h2{
+  color: yellow;
+  font-size: 3em;
+  text-transform: capitalize;
+}
+
+.boutton1{
+  font-size: 1em;
+  color: #fff;
+  background: #fb911f;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+.boutton2{
+  font-size: 1em;
+  color: #fff;
+  background: #b0a70b;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.contact{
+   color: yellow;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(239, 6, 6, 0.913);
+    width: 100%;
+    background-position: center;  
+    text-align: center;
+}
+
+#contact{
+  background-image: url(/images/resto.jpg);
+  border-radius: 100%;
+}
+.map{
+ width:60%;
+ }
+.text{
+    color: yellow;
+    text-align: center;
+}
+
+.infohoraire li{
+ list-style: none;
+}

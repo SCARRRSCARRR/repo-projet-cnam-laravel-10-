@@ -95,10 +95,10 @@ class MainController extends Controller
     // /admin/reservation
        public function reservationIndex(){
            
-       $reservation = Reservation::all();
+       $reservations = Reservation::all();
     
         return view ('reservationIndex',[
-           'reservation' => $reservation,
+           'reservations' => $reservations,
         ]);
 
      } 

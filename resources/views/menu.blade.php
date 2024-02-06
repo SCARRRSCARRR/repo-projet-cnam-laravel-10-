@@ -5,6 +5,7 @@
 @section ('content')
     <section>
         <h2>Menu</h2>
+        <hr>
         @foreach ($categories as $categorie)
         <div>
             <h3>{{ $categorie->nom }}</h3>

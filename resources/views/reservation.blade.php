@@ -4,7 +4,8 @@
 
 @section ('content')
 <section>
-    <h2>reservation</h2>
+    <h2>Réservation</h2>
+    <hr>
     {{-- <div>
        @foreach($errors->all() as $error)
          {{ $error}}
