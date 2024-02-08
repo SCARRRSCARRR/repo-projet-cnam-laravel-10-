@@ -12,7 +12,7 @@
             <ul class="plats">
                 @foreach ($categorie->plats() as $plat)
                 <li>
-                    <a href="{{ route('main.plat', ['id' => $plat->id]) }}"><img src="{{ asset('image/'.$plat->fichier) }}" 
+                    <a href="{{ route('main.plat', ['id' => $plat->id]) }}"><img class= "platimg" src="{{ asset('image/'.$plat->fichier) }}" 
                     alt="{{ $plat->nom }}" /></a>
                     <a href="{{ route('main.plat', ['id' => $plat->id]) }}">
                     <h4>{{ $plat->nom }}</h4></a>

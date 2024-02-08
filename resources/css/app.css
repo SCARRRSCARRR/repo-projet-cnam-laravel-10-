@@ -8,9 +8,27 @@
   }
   
   .plats img {
-    width: 150px;
+    display: flex;
+    width: 100px;
     height: auto;
+
   }
+
+  .platimg{
+    background-color:#f7f2eb;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 100%;
+    padding: 10px;
+    transition: 0.25s;
+  
+}
+
+.platimg:hover{
+  transform: scale(0.9);
+}
+  
+
+
   
   .plats h4 {
     display: inline-block;
@@ -134,9 +152,12 @@ div.slides {
   }
 
 .navbar{
-   display: flex;
+   display: inline-block;
    position: relative;
    z-index: 10;
+   
+   
+   
 }
 
 .navbar a{
@@ -234,4 +255,16 @@ div.slides {
 
 .navbar td a:hover::after {
   width: 100%;
+}
+
+.presentation{
+  display: flex;
+  float: right;
+}
+
+.imgp{
+  width:90%;
+  border-radius: 50%;
+  border:  5px solid;
+  color: black;
 }

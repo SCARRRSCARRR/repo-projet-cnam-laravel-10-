@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Aproposdenous;
 use App\Models\PhotoAmbiance;
 use App\Models\Contact;
 use App\Models\Actu;
@@ -122,4 +123,13 @@ class MainController extends Controller
     
     //recup la liste des résa
     // affiche un templat
+
+        public function aproposdenous ()
+    {   
+        $actus= Actu::all();
+
+        return view('aproposdenous', [
+            'actus'=> $actus,
+        ]);
+    }
 }

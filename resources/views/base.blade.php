@@ -13,8 +13,10 @@
             <img class="log" src="/Image/3.jpg" alt=""></a>   
         </div>
             <ul class=navbar>
-                <table class="header" width ="100%">
+                <table class="header">
                      <td><a href= "{{ route('main.home') }}">Accueil</a></td>
+
+                     <td><a href= "{{ route('main.aproposdenous') }}">A Propos de nous</a></td>
 
                      <td><a href= "{{ route('main.menu') }}">Menu</a></td>
 

@@ -30,3 +30,5 @@ Route::get('/reservationShow{id}', [MainController::class, 'reservationShow'])->
 
 Route::get('/contact', [MainController::class, 'contact'])->name('main.contact');
 
+Route::get('/aproposdenous', [MainController::class, 'aproposdenous'])->name('main.aproposdenous');
+
