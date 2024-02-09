@@ -11,7 +11,7 @@
         <div class="fond">
             <a href="#" class="logo">  
             <img class="log" src="/Image/3.jpg" alt=""></a>
-            <img class="etoiles" src="/Image/etoiles.png" alt=""> 
+            <img class="etoile" src="/Image/etoiles.png" alt=""> 
             <img class="etoiles" src="/Image/etoiles.png" alt="">   
         </div>
             <ul class=navbar>
