@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,6 +32,12 @@ Route::get('/reservationShow{id}', [MainController::class, 'reservationShow'])->
 Route::get('/contact', [MainController::class, 'contact'])->name('main.contact');
 
 Route::get('/aproposdenous', [MainController::class, 'aproposdenous'])->name('main.aproposdenous');
+
+
+Route::get('/admin/reservation', [MainController::class, 'adminReservationIndex'])->middleware('auth')->name('main.adminReservation.Index');
+
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
