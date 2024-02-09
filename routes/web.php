@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminReservationController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -25,17 +26,18 @@ Route::get('/reservation/create', [MainController::class, 'reservation'])->name(
 
 Route::post('/reservation/create', [MainController::class, 'reservationStore'])->name('main.reservation.store');
 
-Route::get('/reservationIndex',[ MainController::class, 'reservationIndex'])->name('main.reservationIndex');
-
-Route::get('/reservationShow{id}', [MainController::class, 'reservationShow'])->name('main.reservationShow');
-
 Route::get('/contact', [MainController::class, 'contact'])->name('main.contact');
 
 Route::get('/aproposdenous', [MainController::class, 'aproposdenous'])->name('main.aproposdenous');
 
 
-Route::get('/admin/reservation', [MainController::class, 'adminReservationIndex'])->middleware('auth')->name('main.adminReservation.Index');
+Route::get('/admin/reservation', [AdminReservationController::class, 'index'])->middleware('auth')->name('admin.reservation.index');
 
+Route::get('/admin/reservation{id}', [AdminReservationController::class, 'show'])->middleware('auth')->name('admin.reservation.show');
+
+Route::get('/admin/reservation/{id}/edit', [AdminReservationController::class, 'edit'])->middleware('auth')->name('admin.reservation.edit');
+
+Route::put('/admin/reservation{id}', [AdminReservationController::class, 'update'])->middleware('auth')->name('admin.reservation.update');
 
 
 
