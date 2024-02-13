@@ -18,13 +18,14 @@
                 <table class="header">
                      <td><a href= "{{ route('main.home') }}">Accueil</a></td>
 
-                     <td><a href= "{{ route('main.aproposdenous') }}">A Propos de nous</a></td>
-
                      <td><a href= "{{ route('main.menu') }}">Menu</a></td>
-
+                     
                      <td><a href="{{ route('main.reservation') }}">Réservation</a></td>
-
+                     
                      <td><a href="{{ route('main.contact') }}">Contact</a></td>
+
+                     <td><a href= "{{ route('main.aproposdenous') }}">A Propos</a></td>
+
                 </table>
             </ul>
     </header>
