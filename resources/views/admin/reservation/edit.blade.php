@@ -13,6 +13,7 @@
 
         <form action="{{ route('admin.reservation.update', ['id' => $reservation->id]) }}" method="post">
             @csrf
+            @method('PUT')
             <div>
                 <label for="nom">Nom</label>
                 <input type="text" name="nom" id="nom" min="3" max="50" value="{{ old('nom', $reservation->nom) }}"

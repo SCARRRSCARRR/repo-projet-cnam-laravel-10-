@@ -2,57 +2,76 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Reservation; 
+use App\Models\Reservation;
 use Illuminate\Http\Request;
 
 class AdminReservationController extends Controller
-
-{    
-     private $heures = [
-        // crénaux du midi
+{
+    private $heures = [
+        // créneaux du midi
         '12:00',
         '12:30',
         '13:00',
         '13:30',
 
-    //crénaux du soir
+        // créneaux du soir
         '20:00',
         '20:30',
         '21:00',
         '21:30',
     ];
 
-    // /admin/reservation
-
     public function index()
     {
-
+        // récupération de la liste des réservations
         $reservations = Reservation::all();
 
-        return view('reservationIndex', [
+        // affiche un template
+        return view('admin.reservation.index', [
             'reservations' => $reservations,
         ]);
-
     }
-    public function show(int $id)
+
+    public function show()
     {
-
-        $reservation = Reservation::find($id);
-
-        return view('reservationShow', ['reservation' => $reservation]);
+        // récup la résa
+        // affiche un template
     }
-    public function edit(int $id)
-    {   
+
+    public function edit($id)
+    {
         $reservation = Reservation::find($id);
 
         return view('admin.reservation.edit', [
             'reservation' => $reservation,
-            'heures' => $this ->heures,
+            'heures' => $this->heures,
         ]);
-    }
+   }
+   public function update (Request $request, $id)
+   {
+    $heures = implode(',', $this->heures);
 
+        $validated = $request->validate([
+            'nom' => 'required|min:3|max:50',
+            'couverts' => 'required|numeric|gte:1|lte:16',
+            'heure' => "required|in:{$heures}",
+            'jour' => 'required|date|date_format:Y-m-d|after_or_equal:today',
+            'telephone' => 'required|min: 10|max:10',
+            'commentaires' => 'nullable|min:10|max:1000',
+        ]);
 
+        $reservation = Reservation::find($id);
+        $reservation->nom = $validated['nom'];
+        $reservation->couverts = $validated['couverts'];
+        $reservation->heure = $validated['heure'];
+        $reservation->jour = $validated['jour'];
+        $reservation->telephone = $validated['telephone'];
+        $reservation->commentaires = $validated['commentaires'];
 
+        $reservation->save();
+
+        return redirect()->route('admin.reservation.show', [
+            'id' => $reservation ->id      
+        ]);
+   }
 }
-
-

@@ -22,4 +22,5 @@
         </p>
        <a href="http://127.0.0.1:8000/"><img class="imgp" src="/Image/presentation.jpg" alt=""> </a>
     </div>
+</section>
 @endsection

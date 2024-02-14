@@ -69,26 +69,6 @@
                 <i class="fa-brands fa-instagram"></i> --}}
         </a>
         </div>
-        <hr>
-        <div class="contactformulaire">
-            <h4>Envoyer un message</h4>
-            <div class="inputboite">
-                <input type="text" placeholder="Nom">
-            </div>
-            <br>
-            <div class="inputboite">
-                <input type="text" placeholder="email">
-            </div>
-            <br>
-            <div class="inputboite">
-                <textarea placeholder="message"></textarea>
-            </div>
-            <br>
-            <div class="inputboite">
-                <input type="submit" value="Envoyer">
-            </div>
-        </div>
-        <hr>
     <iframe class="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.9155085815955!2d3.067824012181228!3d50.62868637439592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d58d87da5f2d%3A0x739db98176c2b59d!2s5%20Bd%20Louis%20XIV%2C%2059800%20Lille!5e0!3m2!1sfr!2sfr!4v1701958548689!5m2!1sfr!2sfr"
         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
