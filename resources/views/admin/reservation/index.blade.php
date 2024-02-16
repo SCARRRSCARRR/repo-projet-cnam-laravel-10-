@@ -5,6 +5,7 @@
 @section('content')
 <section>
     <h2>Admin - Réservation - Index</h2>
+    
 
     <table>
         <tr>
@@ -33,8 +34,9 @@
                 <td>
                     <a href="{{ route('admin.reservation.show', ['id' => $reservation->id])}}">Voir</a>
                     <a href="{{ route('admin.reservation.edit', ['id' => $reservation->id])}}">Modifier</a>
-                    <form action="" method="post">
+                    <form action="{{ route('admin.reservation.delete', ['id' => $reservation->id])}}" method="post" onsubmit=" return confirm('Supprimer cet élément ?')">
                         @csrf
+                        @method('DELETE')
                         <button type="submit">Supprimer</button>
                     </form>
                 </td>

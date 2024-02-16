@@ -50,23 +50,23 @@
             <hr>
             <div class="div2">
                 <div>
-                    <h3>Menu</h3>
+                    <h3>Nos services</h3>
                     <ul>
-                        <a href="http://127.0.0.1:8000/menu/">Entrées</a>
-                        <a href="#">Plats</a>
-                        <a href="#">Desserts</a>
+                        <a href="#">Accueil</a>
+                        <a href="http://127.0.0.1:8000/menu/">Nos produits</a>
+                        
                     </ul>
                 </div>
                 <div>
-                    <h3>Restaurant</h3>
+                    <h3>Restaurants</h3>
                     <ul>
-                        <a href="#">A propos</a>
-                        <a href="#">Services</a>
+                        <a href="#">Paris (en construction)</a>
+                        <a href="#">Marseille</a>
                        
                     </ul>
                 </div>
                 <div>
-                    <h3>Informations légales</h3>
+                    <h3>En savoir plus</h3>
                     <ul>
                         <a href="#">Cookies</a>
                         <a href="#">Protection des données</a>
