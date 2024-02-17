@@ -9,7 +9,7 @@
             <h1>OCNAMO</h1>
             <!--slider image-->
             </header>
-            <h2>Pour voyager manger Camerounais</h2>
+            <h2><i>Pour voyager mangez Camerounais</h2></i>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

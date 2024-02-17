@@ -11,7 +11,7 @@
          {{ $error}}
       @endforeach
     </div>  --}}
-
+<div class="reservation">
 <form action="{{ route('main.reservation.store') }}" method="post">
       @csrf
       <div>
@@ -74,6 +74,7 @@
       <div>
         <button type="submit">Réserver</button>
       </div>
+</div>
 </form>
 </section>
 @endsection

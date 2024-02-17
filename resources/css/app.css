@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .plats {
   display: flex;
@@ -6,13 +6,27 @@
   margin: 0;
   padding: 0;
 }
+ul.plats{
+  display:flexbox;
+  margin: 10%;
+  height: 40%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
 .plats img {
   display: flex;
-  width: 100px;
-  height: auto;
+  width: 200px;
+  height: 200px;
 
 }
+.h3{
+  color: black;
+  font-family:'Lobster';
+  font-size:xx-large;
+  display: flex;
+  justify-content: center;
+} 
 
 .platimg {
   background-color: #f7f2eb;
@@ -330,3 +344,17 @@ footer .div3 p:last-child {
   margin-top: 10px;
 } 
 
+/*reservation*/
+
+.reservation{
+  display: flex;
+  justify-content: center;
+}
+
+/*menu*/
+
+.menu
+{
+  display: block;
+  justify-content: space-around;
+}

@@ -24,4 +24,7 @@ insert into etiquettes_plats (etiquettes_id, plats_id) values (7,7);
 insert into etiquettes_plats (etiquettes_id, plats_id) values (12,7);
 insert into etiquettes_plats (etiquettes_id, plats_id) values (3,8);
 insert into etiquettes_plats (etiquettes_id, plats_id) values (12,8);
-insert into etiquettes_plats (etiquettes_id, plats_id) values (8,8);
+insert into etiquettes_plats (etiquettes_id, plats_id) values (6,9);
+insert into etiquettes_plats (etiquettes_id, plats_id) values (12,9);
+insert into etiquettes_plats (etiquettes_id, plats_id) values (3,9);
+insert into etiquettes_plats (etiquettes_id, plats_id) values (10,9);

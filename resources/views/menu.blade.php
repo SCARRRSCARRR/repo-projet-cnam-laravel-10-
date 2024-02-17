@@ -3,12 +3,12 @@
 @section ('title', 'Menu')
 
 @section ('content')
-    <section>
+    <section class="menu">
         <h2>Menu</h2>
         <hr>
         @foreach ($categories as $categorie)
         <div>
-            <h3>{{ $categorie->nom }}</h3>
+            <h3 class="h3"><u>{{ $categorie->nom }}</h3></u>
             <ul class="plats">
                 @foreach ($categorie->plats() as $plat)
                 <li>
