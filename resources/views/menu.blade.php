@@ -18,6 +18,14 @@
                     <h4>{{ $plat->nom }}</h4></a>
                     <span class="prix">{{ $plat->prix }} eur</span>
                     <ul>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
                          @foreach ($plat->etiquettes() as $etiquette)
                               <li>{{ $etiquette->nom }}</li>
                          @endforeach

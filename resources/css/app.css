@@ -18,8 +18,8 @@ ul.plats{
   display: flex;
   width: 200px;
   height: 200px;
+} 
 
-}
 .h3{
   color: black;
   font-family:'Lobster';
@@ -29,20 +29,19 @@ ul.plats{
 } 
 
 .platimg {
-  background-color: #f7f2eb;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
-  padding: 10px;
-  transition: 0.25s;
-}
+  background-color:gray;
+  padding: 6px;
 
-.platimg:hover {
-  transform: scale(0.9);
-}
+}  
 
 .plats h4 {
   display: inline-block;
 }
+
+
+.plats li:hover{
+  transform: translateY(-30px) scale(1.1);
+} 
 
 .invalid-feedback {
   color: red;
@@ -201,7 +200,7 @@ div.slides {
   margin-left: 10px;
 }
 
-.contact {
+.contact, p {
   color:yellow;
   background-size: cover;
   box-shadow: 4px 4px 12px blue;
@@ -253,10 +252,12 @@ div.slides {
 .navbar td a:hover::after {
   width: 100%;
 }
-
-.presentation {
+ /* contact*/
+.presentation, p {
   display: flex;
   float: right;
+  font-size:large;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
 .imgp {
@@ -358,3 +359,15 @@ footer .div3 p:last-child {
   display: block;
   justify-content: space-around;
 }
+
+.food-rating {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.rating ion-icon {
+  color: var(--primary);
+}
+
+

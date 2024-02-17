@@ -7,11 +7,13 @@
     <hr>
 <section class="contact" id="contact">
         <h3>Ocnamo</h3>
-          <p> <span>5 rue Boulevard Louis XIV</span>
-            <span>59800 Lille France</span>
-          </p>
 
-        <a href="tel:+33320556179" class="btn-primary phone_btn">
+          <span>5 rue Boulevard Louis XIV</span>
+            <span>59800 Lille France</span>
+          <br>  
+          <br>
+
+        <a href="tel:+33320556179">
             <span class="text">0612122020</span>
             <span class="icon">
             <i class="ic ic-phone"></i></span> </a>

@@ -8,7 +8,7 @@
     <h2> A propos de nous </h2>
     <hr>
     <div class=presentation>
-        <p>
+        <p><i>
             "Plongez dans un voyage culinaire authentique au cœur du Cameroun dans notre restaurant exquis. 
             <br>
             <br>
@@ -19,7 +19,7 @@
              <br>
              <br>
             L'ambiance chaleureuse et l'accueil attentionné complètent l'expérience, créant un lieu où chaque repas devient une célébration de la diversité et de la générosité de la cuisine camerounaise."
-        </p>
+        </p></i>
        <a href="http://127.0.0.1:8000/"><img class="imgp" src="/Image/presentation.jpg" alt=""> </a>
     </div>
 </section>
