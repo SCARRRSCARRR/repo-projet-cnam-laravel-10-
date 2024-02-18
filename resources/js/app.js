@@ -12,7 +12,7 @@ const btns = document.querySelectorAll('.btn-first');
 const l1 = document.querySelector('.l1');
 const l2 = document.querySelector('.l2');
 
-window.addEventListener('load', () => {
+window.addEventListener('load', () => {                 
 
     const TL = gsap.timeline({paused: true});
 

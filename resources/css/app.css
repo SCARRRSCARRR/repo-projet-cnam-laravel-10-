@@ -352,19 +352,14 @@ footer .div2 ul a:hover {
   letter-spacing: 0.5px;
   color: #fb911f;
 }
-footer .div3 {
+.div3 {
+  display: flex;
   text-align: center;
+  color: white;
   background-color: black;
-}
-footer .div3 p:first-child {
-  font-size: 13px;
+  justify-content: center;
 }
 
-footer .div3 p:last-child {
-  font-size: 12px;
-  color: #999;
-  margin-top: 10px;
-} 
 
 /*reservation*/
 

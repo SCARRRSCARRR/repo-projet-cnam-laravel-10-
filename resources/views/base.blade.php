@@ -33,9 +33,8 @@
     </header>
     @yield('content')
 <footer>
-       
         <div class="footer">
-            <hr>
+        <hr>
             <div class="icones_social">
                 <a href="#" class="social">
                     <ion-icon name="logo-facebook"></ion-icon>
@@ -52,7 +51,7 @@
                 <div>
                     <h3>Nos services</h3>
                     <ul>
-                        <a href="#">Accueil</a>
+                        <a href="http://127.0.0.1:8000/">Accueil</a>
                         <a href="http://127.0.0.1:8000/menu/">Nos produits</a>
                         
                     </ul>
@@ -68,7 +67,7 @@
                 <div>
                     <h3>En savoir plus</h3>
                     <ul>
-                        <a href="http://127.0.0.1:8000/contactphp ">Horaires</a>
+                        <a href="http://127.0.0.1:8000/contact">Horaires</a>
                         <a href="#">Protection des données</a>
                     
                     </ul>
@@ -76,11 +75,10 @@
             </div>
         <hr>
         <div class="div3">
-            <p> pour votre santé mangez au moins 5 fruits et légumes par jour</p>
-            <p>&copy;2024 BEDU POSTIGA dev</p>
-        </div>
-        
-    </footer>
+            <p>Pour votre santé mangez au moins 5 fruits et légumes par jour</p>
+            <p>&copy;2024 BEDU POSTIGA</p>
+        </div>      
+ </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
