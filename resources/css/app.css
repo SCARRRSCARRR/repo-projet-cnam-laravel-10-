@@ -153,6 +153,9 @@ div.slides {
   position: relative;
   z-index: 10;
 }
+ ul {
+  display: inline-flexbox;
+}
 
 .navbar a {
   color: #c11515;
@@ -200,59 +203,83 @@ div.slides {
   margin-left: 10px;
 }
 
-.contact, p {
-  color:yellow;
-  background-size: cover;
-  box-shadow: 4px 4px 12px blue;
-  width: 100%;
-  background-position: center;
-  text-align: center;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-#contact {
-  background-image: url(/images/interieur\ restaurant.jpg);
-  border-radius: 100%;
-}
-
-.map {
-  width: 60%;
-}
-
-.text {
-  color: yellow;
-  text-align: center;
-}
-
-.infohoraire li {
-  list-style: none;
-}
-
-.navbar td a {
+.header td a {
   margin-left: 10px;
   text-transform: capitalize;
   font-size: 20px;
   color: black;
   text-decoration: 0;
   position: relative;
+  
 }
 
-.navbar td a::after {
+.header td a::after {
   position: absolute;
   left: 0;
   bottom: -5px;
   content: "";
   width: 0;
   height: 5px;
-  background-color: red;
+  background-color: black;
   transition: 0.1s ease-out;
   cursor: pointer;
 }
 
-.navbar td a:hover::after {
+.header td a:hover::after {
   width: 100%;
 }
- /* contact*/
+/* contact*/
+
+.adresse{
+  text-align:center;
+  justify-content: center;
+  font-size: x-large;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+ .contact {
+  color:black;
+  background-size: cover;
+  box-shadow: 4px 4px 12px cornflowerblue;
+  width: 100%;
+  background-position: center;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+ }
+
+#contact {  
+  margin-top: 3%;
+  background-image: url(/images/interieur\ restaurant.jpg);
+  border-radius: 100%;
+}
+
+.map {
+  width: 60%;
+  margin-top: 20%;
+}
+
+
+
+.header, table, td {
+  background-color: rosybrown;
+  border-color: black;
+  border:  2px solid;
+  align-items: center;
+  display: inline-block;
+  padding: 0%;
+  color: black;
+}
+
+
+/* a propos de nous */
+.imgp {
+  width: 90%;
+  border-radius: 50%;
+  border: 5px solid;
+  color: black;
+}
+
+
 .presentation, p {
   display: flex;
   float: right;
@@ -260,12 +287,6 @@ div.slides {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
-.imgp {
-  width: 90%;
-  border-radius: 50%;
-  border: 5px solid;
-  color: black;
-}
 
 /*footer*/
 
@@ -348,8 +369,15 @@ footer .div3 p:last-child {
 /*reservation*/
 
 .reservation{
+  background-image:url(/images/OIG3.jpg);
+  background-size: 30%;
+  color:white;
   display: flex;
   justify-content: center;
+  font-size: x-large;
+  border: 2px solid;
+  margin: 20px;
+  padding: 10px 20px 5px;
 }
 
 /*menu*/

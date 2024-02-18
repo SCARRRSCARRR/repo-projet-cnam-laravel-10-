@@ -16,7 +16,7 @@
             <img class="etoile" src="/Image/etoiles.png" alt="">
             <img class="etoiles" src="/Image/etoiles.png" alt="">
         </div>
-        <ul class=navbar>
+        <ul>
             <table class="header">
                 <td><a href= "{{ route('main.home') }}">Accueil</a></td>
 
@@ -68,7 +68,7 @@
                 <div>
                     <h3>En savoir plus</h3>
                     <ul>
-                        <a href="#">Cookies</a>
+                        <a href="http://127.0.0.1:8000/contact">Horaires</a>
                         <a href="#">Protection des données</a>
                     
                     </ul>
