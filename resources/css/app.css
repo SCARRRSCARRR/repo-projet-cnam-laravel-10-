@@ -451,5 +451,14 @@ footer .div2 ul a:hover {
   text-align: center;
   color: white;
   list-style: none;
+}
 
+.etik{
+  color: white; 
+  font-size: x-large;
+}
+
+.prix{
+  color:white;
+  font-size: x-large;
 }
