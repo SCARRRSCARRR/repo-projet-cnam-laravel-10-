@@ -1,3 +1,3 @@
 insert into actus (id, contenu, date_publication, created_at, updated_at) values (1, 'Un troisième restaurant va ouvrir ses portes prochainement !', '2024-02-19 10:32:19', NULL, NULL);
-insert into actus (id, contenu, date_publication, created_at, updated_at) values (2, 'Le restaurant propose desormé des plats Veggie', '2024-02-19 10:32:19', NULL, NULL);
-insert into actus (id, contenu, date_publication, created_at, updated_at) values (3, "Le restaurant vient d'arriver sur vos palteforme de livraison prefèrer !", '2024-02-19 10:32:19', NULL, NULL);
+insert into actus (id, contenu, date_publication, created_at, updated_at) values (2, 'Une nouvelle employée au nom de Fanny vient de rejoindre la famille OCNAMO', '2024-02-19 10:32:19', NULL, NULL);
+insert into actus (id, contenu, date_publication, created_at, updated_at) values (3, "Le chanteur KEVIN vient faire un concert le 20-02-2024 à 19h!", '2024-02-19 10:32:19', NULL, NULL);

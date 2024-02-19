@@ -16,10 +16,9 @@
 
     <section class="contact" id="contact">
         <div class="tableau1">
-
             <table>
                 <caption>
-                    Horaires d'ouverture du restaurant
+                   Horaires d'ouverture du restaurant
                 </caption>
                 <tr>
                     <th>JOURS</th>
@@ -48,16 +47,16 @@
                 <tr>
                     <th>vendredi</th>
                     <td>12:00-14:30 / 18:30-23:00</td>
-                    >
+                    
                 </tr>
                 <tr>
                     <th>Samedi</th>
                     <td>12:00-15:00 / 18:00-23:00</td>
-
                 </tr>
                 <tr>
                     <th>Dimanche</th>
                     <td>12:00-15:00</td>
+                </tr>
             </table>
         </div>
         <iframe class="map"

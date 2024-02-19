@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="fond">
-            <a href="#" class="logo">
+            <a href="http://127.0.0.1:8000/" class="logo">
                 <img class="log" src="/Image/3.jpg" alt=""></a>
             <img class="etoile" src="/Image/etoiles.png" alt="">
             <img class="etoiles" src="/Image/etoiles.png" alt="">
