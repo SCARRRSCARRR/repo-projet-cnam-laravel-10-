@@ -67,7 +67,7 @@
                     <h3>En savoir plus</h3>
                     <ul>
                         <a href="http://127.0.0.1:8000/contact">Horaires</a>
-                        <a href="#">Protection des données</a>
+                        <a href="#">Mentions légales</a>
                     
                     </ul>
                 </div>
