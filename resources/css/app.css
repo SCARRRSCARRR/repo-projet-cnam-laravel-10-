@@ -435,3 +435,21 @@ footer .div2 ul a:hover {
   color: yellow;
   font-size:large;
 }
+
+.confirmation li p{
+  display: flex;
+  text-align: center;
+}
+
+.p1{
+  position:absolute;
+  font-size: x-large;
+  
+}
+
+.ul1 li{
+  text-align: center;
+  color: white;
+  list-style: none;
+
+}

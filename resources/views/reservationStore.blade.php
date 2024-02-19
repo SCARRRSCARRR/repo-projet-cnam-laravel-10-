@@ -7,9 +7,9 @@
 
 
 
-<p>Votre réservation à bien été pris en compte</p>
+<p class="p1">Votre réservation à bien été pris en compte</p>
 
-<ul>
+<ul class="ul1">
     <li> {{ $reservation->nom }} </li>
     <li> {{ $reservation->couverts }} </li>
     {{-- convertit une date au format y-m-d en date d/m/Y --}}
@@ -20,4 +20,5 @@
     <li> {{ $reservation->commentaires }}</li>
     @endif    
 </ul>
+</div>
 @endsection
