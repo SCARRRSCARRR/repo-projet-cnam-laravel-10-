@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminActus;
+use App\Http\Controllers\AdminPhotosAmbiances;
 use App\Http\Controllers\AdminReservationController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProfileController;
@@ -58,6 +59,22 @@ Route::get('/admin/actus/{id}/edit', [AdminActus::class, 'edit'])->middleware('a
 Route::put('/admin/actus/{id}', [AdminActus::class, 'update'])->middleware('auth')->name('admin.actus.update');
 
 Route::delete('/admin/actus/{id}', [AdminActus::class, 'delete'])->middleware('auth')->name('admin.actus.delete');
+
+
+Route::get('/admin/photos_ambiances', [AdminPhotosAmbiances::class, 'index'])->middleware('auth')->name('admin.photos_ambiances.index');
+
+Route::get('/admin/photos_ambiances/create', [AdminPhotosAmbiances::class, 'create'])->middleware('auth')->name('admin.photos_ambiances.create');
+
+Route::post('/admin/photos_ambiances', [AdminPhotosAmbiances::class, 'store'])->middleware('auth')->name('admin.photos_ambiances.store');
+
+Route::get('/admin/photos_ambiances/{id}', [AdminPhotosAmbiances::class, 'show'])->middleware('auth')->name('admin.photos_ambiances.show');
+
+Route::get('/admin/photos_ambiances/{id}/edit', [AdminPhotosAmbiances::class, 'edit'])->middleware('auth')->name('admin.photos_ambiances.edit');
+
+Route::put('/admin/photos_ambiances/{id}', [AdminPhotosAmbiances::class, 'update'])->middleware('auth')->name('admin.photos_ambiances.update');
+
+Route::delete('/admin/photos_ambiances/{id}', [AdminPhotosAmbiances::class, 'delete'])->middleware('auth')->name('admin.photos_ambiances.delete');
+
 
 
 Route::get('/dashboard', function () {

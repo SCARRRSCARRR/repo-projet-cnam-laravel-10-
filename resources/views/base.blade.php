@@ -27,7 +27,6 @@
                 <td><a href="{{ route('main.contact') }}">Contact</a></td>
 
                 <td><a href= "{{ route('main.aproposdenous') }}">A Propos</a></td>
-
             </table>
         </ul>
     </header>

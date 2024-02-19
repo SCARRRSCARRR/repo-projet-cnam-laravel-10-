@@ -225,7 +225,6 @@ div.slides {
   color: black;
   text-decoration: 0;
   position: relative;
-  
 }
 
 .header td a::after {
@@ -243,6 +242,8 @@ div.slides {
 .header td a:hover::after {
   width: 100%;
 }
+
+
 /* contact*/
 
 h2{
