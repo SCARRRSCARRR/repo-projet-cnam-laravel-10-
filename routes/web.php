@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminActus;
 use App\Http\Controllers\AdminReservationController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProfileController;
@@ -44,6 +45,19 @@ Route::put('/admin/reservation/{id}', [AdminReservationController::class, 'updat
 
 Route::delete('/admin/reservation/{id}', [AdminReservationController::class, 'delete'])->middleware('auth')->name('admin.reservation.delete');
 
+Route::get('/admin/actus', [AdminActus::class, 'index'])->middleware('auth')->name('admin.actus.index');
+
+Route::get('/admin/actus/create', [AdminActus::class, 'create'])->middleware('auth')->name('admin.actus.create');
+
+Route::post('/admin/actus', [AdminActus::class, 'store'])->middleware('auth')->name('admin.actus.store');
+
+Route::get('/admin/actus/{id}', [AdminActus::class, 'show'])->middleware('auth')->name('admin.actus.show');
+
+Route::get('/admin/actus/{id}/edit', [AdminActus::class, 'edit'])->middleware('auth')->name('admin.actus.edit');
+
+Route::put('/admin/actus/{id}', [AdminActus::class, 'update'])->middleware('auth')->name('admin.actus.update');
+
+Route::delete('/admin/actus/{id}', [AdminActus::class, 'delete'])->middleware('auth')->name('admin.actus.delete');
 
 
 Route::get('/dashboard', function () {

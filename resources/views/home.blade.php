@@ -10,7 +10,7 @@
     </div>
     <div class="banniere">
         <div class=contenu>
-            <h1>OCNAMO</h1>
+            <h1><i>OCNAMO</h1></i>
             <!--slider image-->
             </header>
             <h2><i><span>Pour <span> <span> voyager <span>mangez </span> <span>Camerounais</span></h2></i>
@@ -32,7 +32,7 @@
     </div>
 
 
-    <ul>
+    <ul class="actus">
         @foreach ($actus as $actu)
             <li>{{ $actu->contenu }} ({{ $actu->date_publication }})</li>
         @endforeach

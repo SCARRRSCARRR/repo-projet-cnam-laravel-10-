@@ -1,2 +1,3 @@
-INSERT INTO 'actus' ('id', 'contenu', 'date_publication', 'created_at', 'updated_at')VALUES
-(1,'Un 3éme restaurant va s\ouvrir', '2024-02-13 17:15:23',  )
+insert into actus (id, contenu, date_publication, created_at, updated_at) values (1, 'Un troisième restaurant va ouvrir ses portes prochainement !', '2024-02-19 10:32:19', NULL, NULL);
+insert into actus (id, contenu, date_publication, created_at, updated_at) values (2, 'Le restaurant propose desormé des plats Veggie', '2024-02-19 10:32:19', NULL, NULL);
+insert into actus (id, contenu, date_publication, created_at, updated_at) values (3, "Le restaurant vient d'arriver sur vos palteforme de livraison prefèrer !", '2024-02-19 10:32:19', NULL, NULL);

@@ -12,6 +12,7 @@ ul.plats{
   height: 40%;
   justify-content: space-between;
   align-items: flex-start;
+  font-size:large;
 }
 
 .plats img {
@@ -21,7 +22,7 @@ ul.plats{
 } 
 
 .h3{
-  color: black;
+  color: white;
   font-family:'Lobster';
   font-size:xx-large;
   display: flex;
@@ -31,11 +32,11 @@ ul.plats{
 .platimg {
   background-color:gray;
   padding: 6px;
-
 }  
 
 .plats h4 {
   display: inline-block;
+  color: white;
 }
 
 
@@ -45,6 +46,17 @@ ul.plats{
 
 .invalid-feedback {
   color: red;
+}
+
+.contenu h1{
+  color: white;
+  font-size:xx-large;
+  margin: 7%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenu p{
+  color: white;
 }
 
 .logo {
@@ -78,8 +90,11 @@ ul.plats{
 }
 
 body {
-  background-color: rgba(236, 151, 77, 0.842);
-  margin: 0 auto;
+  background-image: url(/images/OIG3..NrJAB.B8DI.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  
+  width: 100%;
 }
 
 header {
@@ -91,7 +106,6 @@ header {
 
 header h1 {
   font-size: 40px;
-
 }
 
 header p {
@@ -121,7 +135,7 @@ div.slides {
 }
 
 .slide {
-  opacity: 0.8;
+  opacity: 1;
 
 }
 
@@ -135,11 +149,11 @@ div.slides {
   }
 
   33% {
-    transform: translateX(-1100px);
+    transform: translateX(-600px);
   }
 
   66% {
-    transform: translateX(-1100px);
+    transform: translateX(-1200px);
   }
 
   100% {
@@ -155,6 +169,7 @@ div.slides {
 }
  ul {
   display: inline-flexbox;
+
 }
 
 .navbar a {
@@ -230,7 +245,11 @@ div.slides {
 }
 /* contact*/
 
+h2{
+  color:white;
+}
 .adresse{
+  color: white;
   text-align:center;
   justify-content: center;
   font-size: x-large;
@@ -238,7 +257,6 @@ div.slides {
 }
 
  .contact {
-  color:black;
   background-size: cover;
   box-shadow: 4px 4px 12px cornflowerblue;
   width: 100%;
@@ -257,7 +275,6 @@ div.slides {
   width: 60%;
   margin-top: 20%;
 }
-
 
 
 .header, table, td {
@@ -281,6 +298,7 @@ div.slides {
 
 
 .presentation, p {
+  color: white;
   display: flex;
   float: right;
   font-size:large;
@@ -374,6 +392,9 @@ footer .div2 ul a:hover {
   margin: 20px;
   padding: 10px 20px 5px;
 }
+.bouttonc{
+  color: black;
+}
 
 /*menu*/
 
@@ -381,16 +402,22 @@ footer .div2 ul a:hover {
 {
   display: block;
   justify-content: space-around;
+  color: white;
 }
 
 .food-rating {
   padding-top: 1rem;
   display: flex;
   gap: 1rem;
+
 }
 
 .rating ion-icon {
   color: var(--primary);
+  color: yellow;
 }
 
+.actus{
+  color: white;
+}
 

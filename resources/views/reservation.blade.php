@@ -72,7 +72,7 @@
         @enderror
       </div>
       <div>
-        <button type="submit">Réserver</button>
+        <button class="bouttonc" type="submit">Réserver</button>
       </div>
 </div>
 </form>
